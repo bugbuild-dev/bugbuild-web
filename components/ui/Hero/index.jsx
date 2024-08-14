@@ -22,7 +22,7 @@ const Hero = () => (
                         className="text-gray-700 border hover:bg-gray-50"
                         scroll={false}
                     >
-                        Learn more
+                        Learn more..
                     </NavLink>
                 </div>
             </div>
