@@ -23,6 +23,18 @@ const logos = [
     },
 ]
 
+const users = [
+    {
+        name:"Femina makeover",
+    },
+    {
+        name:"St.antony's js cathredal Manglore",
+    },
+    {
+        name:"Planet Ecommerce",
+    }
+]
+
 
 const LogoGrid = () => (
     <div>

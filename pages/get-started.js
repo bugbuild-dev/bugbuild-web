@@ -21,17 +21,17 @@ export default function GetStarted() {
           <div className='max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none'>
             <div className='max-w-lg sm:text-center lg:text-left'>
               <h1 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>
-                Talk to a Blinder expert
+                Talk to a BugBuilder expert
               </h1>
               <p className='mt-3'>
                 We are here to help. Get in touch with sales our press team and
                 let us know how we can help, or shoot us an email on{" "}
                 <a
-                  href='mailto:support@blinder.com'
+                  href='mailto:bugbuilder.dev@gmail.com'
                   target='_blank'
                   rel='noreferrer'
                   className='text-indigo-600 hover:text-indigo-400 font-medium duration-150'>
-                  support@blinder.com.
+                  bugbuilder.dev@gmail.com
                 </a>
               </p>
             </div>

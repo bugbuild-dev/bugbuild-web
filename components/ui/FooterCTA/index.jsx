@@ -6,7 +6,7 @@ const FooterCTA = () => (
         <div className="custom-screen">
             <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                    Get started with Blinder today
+                    Get started with <span className="text-yellow-500 underline underline-offset-8">BugBuilders</span> today.
                 </h2>
                 <p className="mt-3 text-gray-600">
                     Hire experts to create your next idea, follow best practices, remove roadblocks, and delivery on schedule.

@@ -12,8 +12,8 @@ const ToolKit = () => {
     const features = [
         {
             icon: wordpress,
-            title: "Wordpress",
-            desc: "WordPress is an open-source content management system (CMS)."
+            title: "React",
+            desc: "React is a modern UI library that streamlines building dynamic and responsive user interfaces with reusable components."
         },
         {
             icon: nextjs,
@@ -47,7 +47,7 @@ const ToolKit = () => {
             <div id="toolkit" className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-2xl mx-auto space-y-3 sm:text-center">
                     <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        Work with the best toolkit
+                        Work with the <span className="text-yellow-500">best</span> toolkit
                     </h2>
                     <p>
                         These are a few of our favourite things

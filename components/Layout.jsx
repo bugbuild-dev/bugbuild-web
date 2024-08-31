@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>BugBuilder</title>
-                <meta name='description' content='Bug-builder making it simple for you to build and grow your SaaS applications, or any business idea' />
+                <title>BugBuilders</title>
+                <meta name='description' content='Bug-builders making it simple for you to build and grow your SaaS applications, or any business idea' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>

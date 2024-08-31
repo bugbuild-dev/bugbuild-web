@@ -7,6 +7,7 @@ import Hero from "../components/ui/Hero";
 import LogoGrid from "../components/ui/LogoGrid";
 import Testimonials from "../components/ui/Testimonials";
 import ToolKit from "../components/ui/ToolKit";
+import Services from "../components/ui/Services";
 
 export default function Home() {
   return (
@@ -15,14 +16,15 @@ export default function Home() {
         <meta name='robots' content='index' />
       </Head>
       <Hero />
-      <LogoGrid />
+      {/* <LogoGrid /> */}
       <GradientWrapper>
+        <Services />
         <Features />
         <CTA />
       </GradientWrapper>
       <ToolKit />
       <GradientWrapper>
-        <Testimonials />
+        {/* <Testimonials /> */}
       </GradientWrapper>
       <FooterCTA />
     </>
