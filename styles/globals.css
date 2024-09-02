@@ -1,7 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url('bug.png'); */
 
+body {
+    cursor: none !important; /* Hide the default cursor globally */
+  }
+
+  .bug-cursor {
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 999999 !important;
+    cursor: none !important; /* Ensure custom cursor is not treated as the default */
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px; /* Adjust size according to your bug image */
+    height: 30px; /* Adjust size according to your bug image */
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  }
+  
+  .bug-cursor.pointer {
+    opacity: 0 !important;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+
+  
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+  }
+  .floating-bug {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 10s infinite ease-in-out;
+  }
+  
+  /* Floating animation with both vertical and horizontal movement */
+  @keyframes float {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    25% {
+      transform: translate(20px, -10px); /* Moves right and up */
+    }
+    50% {
+      transform: translate(0px, -20px); /* Moves back to original horizontally and more up */
+    }
+    75% {
+      transform: translate(-20px, 10px); /* Moves left and down */
+    }
+    100% {
+      transform: translate(0px, 0px); /* Back to original position */
+    }
+  }
+  
+  /* Randomized timing for bugs */
+  .floating-bug:nth-child(1) {
+    animation-duration: 8s;
+    animation-delay: 0s;
+  }
+  .floating-bug:nth-child(2) {
+    animation-duration: 12s;
+    animation-delay: 2s;
+  }
+  .floating-bug:nth-child(3) {
+    animation-duration: 10s;
+    animation-delay: 4s;
+  }
+  .floating-bug:nth-child(4) {
+    animation-duration: 9s;
+    animation-delay: 1s;
+  }
+  .floating-bug:nth-child(5) {
+    animation-duration: 11s;
+    animation-delay: 3s;
+  }
+  .floating-bug:nth-child(6) {
+    animation-duration: 7s;
+    animation-delay: 5s;
+  }
+  .floating-bug:nth-child(7) {
+    animation-duration: 13s;
+    animation-delay: 1.5s;
+  }
+  .floating-bug:nth-child(8) {
+    animation-duration: 14s;
+    animation-delay: 2.5s;
+  }
+  
+  
 .custom-screen {
     @apply max-w-screen-xl mx-auto px-4 md:px-8;
 }

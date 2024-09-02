@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <meta name='robots' content='index' />
       </Head>
-      <Hero />
+      <Hero/>
       {/* <LogoGrid /> */}
       <GradientWrapper>
         <Services />

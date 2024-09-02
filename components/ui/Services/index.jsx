@@ -46,13 +46,10 @@ const Services = () => {
                     {
                         features.map((item, idx) => (
                             <li key={idx} className="space-y-3">
-                                {/* <div className="w-12 h-12 border text-indigo-600 rounded-full flex items-center justify-center">
-                                    {item.icon}
-                                </div> */}
-                                <h4 className="text-lg text-gray-800 font-semibold">
+                                <h4 className="text-lg text-gray-800 font-semibold text-center">
                                     {item.title}
                                 </h4>
-                                <p>
+                                <p className="text-center">
                                     {item.desc}
                                 </p>
                             </li>
