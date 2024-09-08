@@ -19,7 +19,7 @@ const Footer = () => (
     <footer>
         <div className="custom-screen pt-16">
             <div className="mt-10 py-10 border-t items-center justify-between flex  flex-col gap-2">
-                <p className="text-gray-600">© 2024 Bugbuilders Startup. All rights reserved.</p>
+                <p className="text-gray-600">© 2024 Bugbuilders. All rights reserved.</p>
                 <Image  src="/bug.png" alt="bug" height={30} width={30} />
                 {/* <div className="flex items-center gap-x-6 text-gray-400 mt-6">
                     {

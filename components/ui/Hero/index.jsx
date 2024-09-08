@@ -1,7 +1,7 @@
 import NavLink from "../NavLink"
 
 const Hero = () => (
-  <section className="relative overflow-hidden">
+  <section className="relative overflow-hidden" >
     {/* Floating Bugs */}
     <div
       className="floating-bug"
@@ -12,7 +12,7 @@ const Hero = () => (
       style={{ top: "50%", left: "90%", backgroundImage: "url('/bug.png')" }}
     ></div>
     <div
-      className="floating-bug"
+      className="floating-bug "
       style={{ top: "80%", left: "40%", backgroundImage: "url('/bug.png')" }}
     ></div>
     <div
@@ -42,9 +42,9 @@ const Hero = () => (
 
     <div className="min-h-screen text-gray-600 flex items-center">
       <div className="space-y-5 max-w-4xl mx-auto text-center">
-        <h1 className="text-6xl  text-gray-800 font-extrabold mx-auto sm:text-6xl">
+        <h1 className="text-gray-800 font-extrabold mx-auto text-6xl">
           Build and scale your next business idea{" "}
-          <span className="text-yellow-500 underline-offset-8 underline">
+          <span className="text-green-500 underline-offset-8 underline">
             FASTER
           </span>
         </h1>

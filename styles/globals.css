@@ -7,6 +7,8 @@ body {
     cursor: none !important; /* Hide the default cursor globally */
   }
 
+  
+
   .bug-cursor {
     position: fixed;
     pointer-events: none;
@@ -37,58 +39,75 @@ body {
     height: 50px; /* Adjust size as needed */
     background-size: contain;
     background-repeat: no-repeat;
+    /* Initial rotation for each bug */
+    transform-origin: center;
     animation: float 10s infinite ease-in-out;
   }
   
-  /* Floating animation with both vertical and horizontal movement */
+  /* Floating animation with both vertical and horizontal movement and persistent rotation */
   @keyframes float {
     0% {
-      transform: translate(0px, 0px);
+      transform: rotate(var(--rotate)) translate(0px, 0px);
     }
     25% {
-      transform: translate(20px, -10px); /* Moves right and up */
+      transform: rotate(var(--rotate)) translate(20px, -10px);
     }
     50% {
-      transform: translate(0px, -20px); /* Moves back to original horizontally and more up */
+      transform: rotate(var(--rotate)) translate(0px, -20px);
     }
     75% {
-      transform: translate(-20px, 10px); /* Moves left and down */
+      transform: rotate(var(--rotate)) translate(-20px, 10px);
     }
     100% {
-      transform: translate(0px, 0px); /* Back to original position */
+      transform: rotate(var(--rotate)) translate(0px, 0px);
     }
   }
   
   /* Randomized timing for bugs */
   .floating-bug:nth-child(1) {
+    --rotate: 45deg;
     animation-duration: 8s;
     animation-delay: 0s;
   }
+  
   .floating-bug:nth-child(2) {
+    --rotate: 90deg;
     animation-duration: 12s;
     animation-delay: 2s;
   }
+  
   .floating-bug:nth-child(3) {
+    --rotate: 0deg;
     animation-duration: 10s;
     animation-delay: 4s;
   }
+  
   .floating-bug:nth-child(4) {
+    --rotate: 180deg;
     animation-duration: 9s;
     animation-delay: 1s;
   }
+  
   .floating-bug:nth-child(5) {
+    --rotate: 45deg;
     animation-duration: 11s;
     animation-delay: 3s;
   }
+  
   .floating-bug:nth-child(6) {
+    --rotate: 90deg;
     animation-duration: 7s;
     animation-delay: 5s;
   }
+  
   .floating-bug:nth-child(7) {
+    --rotate: 180deg;
     animation-duration: 13s;
     animation-delay: 1.5s;
   }
+  
   .floating-bug:nth-child(8) {
+    --rotate: 0deg;
     animation-duration: 14s;
     animation-delay: 2.5s;
   }

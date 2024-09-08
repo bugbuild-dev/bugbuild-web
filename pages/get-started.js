@@ -2,6 +2,7 @@ import Head from "next/head";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
 import Checkbox from "../components/ui/Checkbox";
+import Navbar from "../components/ui/Navbar";
 
 export default function GetStarted() {
   const servicesItems = [
@@ -16,6 +17,7 @@ export default function GetStarted() {
       <Head>
         <title>Contact us - Blinder</title>
       </Head>
+      <Navbar />
       <div className='pt-28 pb-12'>
         <div className='custom-screen text-gray-600'>
           <div className='max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none'>
@@ -24,7 +26,7 @@ export default function GetStarted() {
                 Talk to a BugBuilder expert
               </h1>
               <p className='mt-3'>
-                We are here to help. Get in touch with sales our press team and
+                We are here to help. Get in touch with our team and
                 let us know how we can help, or shoot us an email on{" "}
                 <a
                   href='mailto:bugbuilder.dev@gmail.com'
