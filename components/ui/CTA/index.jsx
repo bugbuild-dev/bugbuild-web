@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const CTA = () => {
     return (
-        <SectionWrapper id="cta" className="pb-0 h-screen flex justify-center items-center px-5">
+        <SectionWrapper id="cta" className="pb-0 sm:mt-[10%] flex justify-center items-center px-5">
             <div className="custom-screen">
                 <div className="items-center gap-x-12 lg:flex">
                     <div className="flex-1 sm:hidden lg:block">

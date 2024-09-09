@@ -36,7 +36,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className={`w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""}`}>
+            <nav className={`bg-white sm:bg-transparent w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""}`}>
                 <div className="custom-screen mx-auto flex items-center justify-between py-3 md:py-5">
                     {/* Left - Brand */}
                     <Brand />

@@ -19,7 +19,7 @@ const Services = () => {
   return (
     <SectionWrapper>
       <div id="services" className="custom-screen text-gray-600">
-        <div className="flex min-h-screen justify-center items-center">
+        <div className="flex sm:mt-[10%] justify-center items-center">
           <div className="flex flex-col sm:flex-row gap-12 ">
             <div className="w-full sm:w-1/2 flex items-center">
               <h1 className="text-gray-800 font-extrabold mx-auto text-4xl text-center leading-normal">

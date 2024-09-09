@@ -67,7 +67,7 @@ const Features = () => {
     <SectionWrapper>
       <div
         id="features"
-        className="min-h-screen text-gray-600 flex flex-col justify-center items-center"
+        className=" text-gray-600 flex flex-col justify-center items-center"
       >
         <div className="flex sm:flex-row gap-12 items-center flex-col-reverse">
           <div className="w-full sm:w-1/2">
