@@ -18,8 +18,8 @@ const socialInfo = [
 const Footer = () => (
     <footer>
         <div className="custom-screen pt-16">
-            <div className=" py-10 border-t items-center justify-between flex  flex-col gap-2">
-                <p className="text-black">© 2024 Bugbuilders. All rights reserved.</p>
+            <div className="border-t items-center justify-between flex  flex-col gap-2">
+                <p className="text-black bg-gray-50">© 2024 Bugbuilders. All rights reserved.</p>
                 <Image  src="/bug.png" alt="bug" height={30} width={30} />
                 {/* <div className="flex items-center gap-x-6 text-gray-400 mt-6">
                     {
