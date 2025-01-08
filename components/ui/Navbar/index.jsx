@@ -12,6 +12,7 @@ const Navbar = () => {
     { title: "Home", path: "/" },
     { title: "Services", path: "/#services" },
     { title: "Features", path: "/#features" },
+    { title: "Blog", path: "/blog" },
   ]
 
   const handleNavMenu = () => {

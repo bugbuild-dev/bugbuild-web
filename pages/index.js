@@ -25,6 +25,7 @@ export default function Home() {
       {/* <GradientWrapper> */}
         <Services />
         <Features />
+        <Testimonials />
         <CTA />
       {/* </GradientWrapper> */}
       {/* <ToolKit /> */}

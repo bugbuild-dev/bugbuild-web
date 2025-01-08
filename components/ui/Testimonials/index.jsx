@@ -1,84 +1,162 @@
-import SectionWrapper from "../../SectionWrapper"
-
-const Testimonials = () => {
-
-    const testimonials = [
+const featuredTestimonial = {
+    body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+    author: {
+      name: 'Brenna Goyette',
+      handle: 'brennagoyette',
+      imageUrl:
+        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
+      logoUrl: 'https://tailwindui.com/plus/img/logos/savvycal-logo-gray-900.svg',
+    },
+  }
+  const testimonials = [
+    [
+      [
         {
-            avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-            name: "Alex wonderson",
-            title: "Founder of Lyconf",
-            quote: "As a small business owner, I was doing everything and my workload was increasing. With this startup, I was able to save time so I could focus on the things that matter most: my clients and my family."
+          body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+          author: {
+            name: 'Sooraj',
+            handle: 'ipacademyofcommerce',
+            imageUrl:
+              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
         },
+        // More testimonials...
+      ],
+      [
         {
-            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-            name: "Karim ahmed",
-            title: "DevOps engineer",
-            quote: "My company's software now is easy to use, saves time and money, and is loved by a lot of users. One customer saved $10k over the course of 3 years and another saves 8 hours per week! Thanks to Blinder."
+          body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+          author: {
+            name: 'Lindsay Walton',
+            handle: 'lindsaywalton',
+            imageUrl:
+              'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
         },
+        // More testimonials...
+      ],
+    ],
+    [
+      [
         {
-            avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
-            name: "Lysa stian",
-            title: "System manger",
-            quote: "My business was in a dire situation. I had no idea what to do, and I felt like I was losing hope. Then I found this Startup and everything changed. It helped me create automated sales."
+          body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+          author: {
+            name: 'Tom Cook',
+            handle: 'tomcook',
+            imageUrl:
+              'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
         },
+        // More testimonials...
+      ],
+      [
         {
-            avatar: "https://randomuser.me/api/portraits/women/79.jpg",
-            name: "Angela stian",
-            title: "Product designer",
-            quote: "One day, my company was about to go under and I had no idea what to do. I found Blinder and it helped me get my business back on track.Now, my company is flourishing and I see new opportunities."
+          body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+          author: {
+            name: 'Leonard Krasner',
+            handle: 'leonardkrasner',
+            imageUrl:
+              'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          },
         },
-        {
-            avatar: "https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
-            name: "Jurica koletic",
-            title: "Founder of Let’s code",
-            quote: "In these difficult economic times, doing business is tough. Funding is hard to come by and many entrepreneurs are struggling to keep their doors open. but when I found this startup everything changed."
-        },
-        {
-            avatar: "https://images.unsplash.com/photo-1590038767624-dac5740a997b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-            name: "Kavi laron",
-            title: "Full stack engineer",
-            quote: "We all know how costly it is to find good help. I was faced with this problem when I lost my data entry staff and my business was on the brink of going under. Thankfully, Blinder saved the day."
-        },
-    ]
-
+        
+        // More testimonials...
+      ],
+    ],
+  ]
+  
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+  
+  export default function Example() {
     return (
-        <SectionWrapper className="pb-0">
-            <div id="testimonials" className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-2xl sm:text-center md:mx-auto">
-                    <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        See what others saying about us
-                    </h2>
-                    <p className="mt-3 text-gray-600">
-                        Listen to what the experts around the world are saying about us.
-                    </p>
+      <div className="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#34d399] to-[#10b981]"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#34d399] to-[#10b981] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+          />
+        </div>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-base/7 font-semibold text-secondary">Testimonials</h2>
+            <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+              We have worked with thousands of amazing people
+            </p>
+          </div>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+            <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+              <blockquote className="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
+                <p>{`“${featuredTestimonial.body}”`}</p>
+              </blockquote>
+              <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+                <img
+                  alt=""
+                  src={featuredTestimonial.author.imageUrl}
+                  className="size-10 flex-none rounded-full bg-gray-50"
+                />
+                <div className="flex-auto">
+                  <div className="font-semibold">{featuredTestimonial.author.name}</div>
+                  <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                 </div>
-                <div className="mt-12">
-                    <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                        {
-                            testimonials.map((item, idx) => (
-                                <li key={idx} className="bg-white border p-4 rounded-xl">
-                                    <figure>
-                                        <div className="flex items-center gap-x-4">
-                                            <img src={item.avatar} className="w-14 h-14 object-cover rounded-full" alt={item.name} />
-                                            <div>
-                                                <span className="block text-gray-800 font-semibold">{item.name}</span>
-                                                <span className="block text-gray-600 text-sm mt-0.5">{item.title}</span>
-                                            </div>
-                                        </div>
-                                        <blockquote>
-                                            <p className="mt-6 text-gray-700">
-                                                {item.quote}
-                                            </p>
-                                        </blockquote>
-                                    </figure>
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </div>
-            </div>
-        </SectionWrapper>
+                <img alt="" src={featuredTestimonial.author.logoUrl} className="h-10 w-auto flex-none" />
+              </figcaption>
+            </figure>
+            {testimonials.map((columnGroup, columnGroupIdx) => (
+              <div key={columnGroupIdx} className="space-y-8 xl:contents xl:space-y-0">
+                {columnGroup.map((column, columnIdx) => (
+                  <div
+                    key={columnIdx}
+                    className={classNames(
+                      (columnGroupIdx === 0 && columnIdx === 0) ||
+                        (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1)
+                        ? 'xl:row-span-2'
+                        : 'xl:row-start-1',
+                      'space-y-8',
+                    )}
+                  >
+                    {column.map((testimonial) => (
+                      <figure
+                        key={testimonial.author.handle}
+                        className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+                      >
+                        <blockquote className="text-gray-900">
+                          <p>{`“${testimonial.body}”`}</p>
+                        </blockquote>
+                        <figcaption className="mt-6 flex items-center gap-x-4">
+                          <img alt="" src={testimonial.author.imageUrl} className="size-10 rounded-full bg-gray-50" />
+                          <div>
+                            <div className="font-semibold">{testimonial.author.name}</div>
+                            <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     )
-}
-
-export default Testimonials
+  }
+  
