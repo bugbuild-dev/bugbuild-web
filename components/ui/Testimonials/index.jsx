@@ -111,7 +111,7 @@ const featuredTestimonial = {
                 <img
                   alt=""
                   src={featuredTestimonial.author.imageUrl}
-                  className="size-10 flex-none rounded-full bg-gray-50 object-cover"
+                  className="h-10 w-10 flex-none rounded-full bg-gray-50"
                 />
                 <div className="flex-auto">
                   <div className="font-semibold">{featuredTestimonial.author.name}</div>
@@ -142,11 +142,7 @@ const featuredTestimonial = {
                           <p>{`“${testimonial.body}”`}</p>
                         </blockquote>
                         <figcaption className="mt-6 flex items-center gap-x-4">
-                          <img
-                            alt=""
-                            src={testimonial.author.imageUrl}
-                            className="size-10 rounded-full bg-gray-50 object-cover"
-                          />
+                          <img alt="" src={testimonial.author.imageUrl} className="size-10 rounded-full bg-gray-50" />
                           <div>
                             <div className="font-semibold">{testimonial.author.name}</div>
                             <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
