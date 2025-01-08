@@ -144,7 +144,7 @@ export default function Blog() {
                     <img
                       alt=""
                       src={post.author.imageUrl}
-                      className="size-10 rounded-full bg-gray-100"
+                      className="h-10 w-10 rounded-full bg-gray-100"
                     />
                     <div className="text-sm/6">
                       <p className="font-semibold text-gray-900">
