@@ -48,18 +48,6 @@ const Hero = () => (
             FASTER
           </span>
         </h1>
-        {/* <h1 className="text-6xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
-          Build and scale your next business idea
-          <span className="relative inline-block">
-            <span className="text-yellow-500">&nbsp;FASTER</span>
-
-            <img
-              src="/underline.svg"
-              alt="Underline"
-              className="absolute left-0 right-0 mx-auto " // Adjust width as needed
-            />
-          </span>
-        </h1> */}
         <p className="max-w-xl mx-auto">
           Bug Builders making it simple for you to build and grow your SaaS
           applications, or any business idea.

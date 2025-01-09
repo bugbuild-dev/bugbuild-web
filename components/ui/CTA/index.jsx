@@ -26,7 +26,7 @@ const CTA = () => {
                         </p>
                         <div className="pt-4">
                             <NavLink
-                                href="/contact"
+                                href="/get-started"
                                 className="inline-flex items-center px-8 py-3 text-lg font-semibold text-white bg-green-500 rounded-lg hover:bg-green-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
                             >
                                 Get in Touch
