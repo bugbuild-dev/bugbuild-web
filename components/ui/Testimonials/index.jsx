@@ -1,35 +1,34 @@
 const featuredTestimonial = {
-    body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+    body: 'Working with this team was a great experience. They delivered exactly what we needed - a clean, elegant website that perfectly represents our architectural practice. Their attention to detail and understanding of our minimal design aesthetic was impressive.',
     author: {
-      name: 'Brenna Goyette',
-      handle: 'brennagoyette',
-      imageUrl:
-        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-      logoUrl: 'https://tailwindui.com/plus/img/logos/savvycal-logo-gray-900.svg',
+      name: 'Era architects',
+      handle: 'eraarchitects',
+      // imageUrl:
+      //   'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
+      // logoUrl: 'https://tailwindui.com/plus/img/logos/savvycal-logo-gray-900.svg',
     },
   }
   const testimonials = [
     [
       [
         {
-          body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+          body: 'The website developed by this team has transformed how we connect with students. Their understanding of educational institutions helped create a platform that truly showcases our courses and facilities.',
           author: {
             name: 'Sooraj',
             handle: 'ipacademyofcommerce',
-            imageUrl:
-              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            // imageUrl:
+            //   'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
           },
         },
         // More testimonials...
       ],
       [
         {
-          body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+          body: 'The mobile app developed by this team exceeded our expectations. They delivered a cost-effective solution for both iOS and Android that streamlined our real estate operations.',
           author: {
-            name: 'Lindsay Walton',
-            handle: 'lindsaywalton',
-            imageUrl:
-              'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            name: 'Mamoottile Realtors',
+            handle: 'mamoottilerealtors',
+            // ... existing code ...
           },
         },
         // More testimonials...
@@ -38,24 +37,22 @@ const featuredTestimonial = {
     [
       [
         {
-          body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+          body: 'The comprehensive web solution developed for our cathedral has been transformative.',
           author: {
-            name: 'Tom Cook',
-            handle: 'tomcook',
-            imageUrl:
-              'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            name: 'St. Antony\'s JS Cathedral',
+            handle: 'stantonyscathedral',
+            // ... existing code ...
           },
         },
         // More testimonials...
       ],
       [
         {
-          body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+          body: 'The modern website developed for our beauty parlour has completely transformed our online presence.',
           author: {
-            name: 'Leonard Krasner',
-            handle: 'leonardkrasner',
-            imageUrl:
-              'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            name: 'Femina Makeover',
+            handle: 'feminamakeover',
+            // ... existing code ...
           },
         },
         
@@ -108,12 +105,12 @@ const featuredTestimonial = {
                 <p>{`“${featuredTestimonial.body}”`}</p>
               </blockquote>
               <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                <img
+                {/* <img
                   alt=""
                   src={featuredTestimonial.author.imageUrl}
                   className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                />
-                <div className="flex-auto">
+                /> */}
+                <div className="flex-auto ml-6">
                   <div className="font-semibold">{featuredTestimonial.author.name}</div>
                   <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
                 </div>
@@ -142,7 +139,7 @@ const featuredTestimonial = {
                           <p>{`“${testimonial.body}”`}</p>
                         </blockquote>
                         <figcaption className="mt-6 flex items-center gap-x-4">
-                          <img alt="" src={testimonial.author.imageUrl} className="h-10 w-10 rounded-full bg-gray-50" />
+                          {/* <img alt="" src={testimonial.author.imageUrl} className="h-10 w-10 rounded-full bg-gray-50" /> */}
                           <div>
                             <div className="font-semibold">{testimonial.author.name}</div>
                             <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
