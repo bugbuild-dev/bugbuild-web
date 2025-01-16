@@ -9,6 +9,7 @@ import Testimonials from "../components/ui/Testimonials"
 import ToolKit from "../components/ui/ToolKit"
 import Services from "../components/ui/Services"
 import Navbar from "../components/ui/Navbar"
+import FeaturedWorks from "../components/ui/Marquee"
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       {/* <GradientWrapper> */}
         <Services />
         <Features />
+        <FeaturedWorks />
         <Testimonials />
         <CTA />
       {/* </GradientWrapper> */}
